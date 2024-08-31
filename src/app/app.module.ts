@@ -3,22 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BookingComponent } from './components/booking/booking.component';
 import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { TableComponent } from './components/common/table/table.component';
-import { RoomsComponent } from './components/rooms/rooms.component';
-import { InvoicesComponent } from './components/invoices/invoices.component';
-import { GuestsComponent } from './components/guests/guests.component';
+import { BaseListComponent } from './components/common/base-list/base-list.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookingComponent,
+    BaseListComponent,
     NavbarComponent,
     TableComponent,
-    RoomsComponent,
-    InvoicesComponent,
-    GuestsComponent
   ],
   imports: [
     BrowserModule,
