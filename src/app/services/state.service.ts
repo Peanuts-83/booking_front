@@ -2,13 +2,11 @@ import { Injectable, Signal, computed, signal } from "@angular/core"
 import { BehaviorSubject } from "rxjs"
 
 @Injectable({ providedIn: 'root'})
-export class CoreService<T> {
+export class StateService<T> {
   /**
    * global state
    */
-  readonly state = signal({
-    title: 'booking'
-  } as T)
+  readonly state = signal({} as T)
 
   /**
    * Returns a reactive value for a property on the state.

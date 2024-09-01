@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CoreService } from './services/core.service'
+import { StateService } from './services/state.service'
 import { List } from './models/list.interface'
 
 @Component({
@@ -10,7 +10,7 @@ import { List } from './models/list.interface'
 export class AppComponent {
 
 
-  constructor(public listService: CoreService<List>) {
+  constructor(public stateService: StateService<List>) {
 
   }
 
@@ -18,6 +18,6 @@ export class AppComponent {
   }
 
   public setTitle(a_value: string) {
-    this.listService.set('title', a_value)
+    this.stateService.set('title', a_value)
   }
 }
